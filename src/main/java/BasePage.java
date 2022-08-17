@@ -25,6 +25,6 @@ public class BasePage {
 
     public void waitForImageTubIsClickable(long timeToWait) {
         new WebDriverWait(driver, Duration.ofSeconds(timeToWait))
-                .until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(@href, 'EQAw')]")));
+                .until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@data-hveid='CAIQAw']")));
     }
 }

@@ -1,6 +1,8 @@
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.devtools.idealized.Javascript;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
@@ -22,7 +24,7 @@ public class HomePage extends BasePage {
         searchField.sendKeys(Keys.ENTER);
     }
 
-    @FindBy(xpath = "//a[contains(@href, 'EQAw')]")
+    @FindBy(xpath = "//a[@data-hveid='CAIQAw']")
     private WebElement imageButton;
 
     public void clickOnImageButton() {
